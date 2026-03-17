@@ -1,5 +1,5 @@
 /* FONT LAYOUT*/
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,17 +7,19 @@ body{
 .sony-logo {
     height: 20px;
 }
+
 /* LENTE NAVBAR*/
-.search-icon{
+.search-icon {
     width: 25px;
     height: 25px;
 }
+
 /* BACKGROUND HERO*/
-.hero{
+.hero {
     position: relative;
 }
 
-.hero-img{
+.hero-img {
     width: 100%;
     height: 420px;
     object-fit: cover;
@@ -25,63 +27,79 @@ body{
     display: block;
 }
 
-.hero-content{
+.hero-content {
     position: absolute;
     left: 0;
     bottom: 30px;
     max-width: 100%;
 }
 
-.hero-logo{
+.hero-logo {
     width: 160px;
     margin-bottom: 16px;
 }
 
-.hero-title{
+.hero-title {
     margin-bottom: 12px;
     font-size: 2rem;
 }
 
-.hero-text{
+.hero-text {
     margin-bottom: 16px;
     font-size: 0.85rem;
     line-height: 1.4;
 }
 
-@media (min-width: 768px){
-    .hero-img{
+/* Colonne games*/
+
+.games-preview {
+    margin-top: 20px;
+}
+
+.game-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border 0.2s ease;
+}
+.game-card:hover{
+    border: 2px solid #0070d1;
+}
+
+@media (min-width: 768px) {
+    .hero-img {
         height: 500px;
     }
 
-    .hero-content{
+    .hero-content {
         bottom: 50px;
         max-width: 100%;
     }
 
-    .hero-logo{
+    .hero-logo {
         width: 250px;
     }
 }
 
-@media (min-width: 992px){
-    .hero-img{
+@media (min-width: 992px) {
+    .hero-img {
         height: 650px;
     }
 
-    .hero-content{
+    .hero-content {
         bottom: 70px;
         max-width: 100%;
     }
 
-    .hero-logo{
+    .hero-logo {
         width: 300px;
     }
 
-    .hero-title{
+    .hero-title {
         font-size: 2.5rem;
     }
 
-    .hero-text{
+    .hero-text {
         font-size: 0.95rem;
     }
 }

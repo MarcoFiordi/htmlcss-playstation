@@ -2,6 +2,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+header{
+    position: sticky;
+    inset: 0;
+    z-index: 2;
+}
 
 /* SONY LOGO GRANDEZZA*/
 .sony-logo {
@@ -63,7 +68,7 @@ body {
     transition: border 0.2s ease;
 }
 
-.game-card:hover {
+.games-preview .game-card:hover {
     border: 2px solid #0070d1;
 }
 
@@ -86,6 +91,11 @@ body {
     opacity: 1;
     border-bottom: 3px solid #0d6efd;
 }
+/* IT TAKES TWO LOGO*/
+.it-logo{
+    width: 250px;
+    margin-left: 20px;
+}
 
 
 
@@ -105,8 +115,10 @@ body {
     .hero-logo {
         width: 250px;
     }
+    .hero-content.it-takes-two{
+        width: 100%;
 }
-
+}
 @media (min-width: 992px) {
     .hero-img {
         height: 650px;
@@ -127,5 +139,8 @@ body {
 
     .hero-text {
         font-size: 0.95rem;
+    }
+    .hero-content.it-takes-two{
+        width: 50%;
     }
 }

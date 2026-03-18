@@ -108,6 +108,18 @@ header{
 .ps-now{
     background-color: #161c3b;
 }
+/* FOOTER */
+.footer-logo{
+    width: 150px;
+    filter: brightness(0) invert(1);
+}
+.footer-globe {
+    width:18px;
+}
+.footer-sie-logo{
+    max-width: 120px;
+}
+
 
 
 
@@ -154,4 +166,11 @@ header{
     .hero-content.it-takes-two{
         width: 50%;
     }
+
+    @media (min-width: 992px) {
+    .footer-links .row {
+        justify-content: flex-end;
+    }
+}
+
 }

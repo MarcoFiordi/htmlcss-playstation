@@ -2,7 +2,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
     position: sticky;
     inset: 0;
     z-index: 2;
@@ -79,7 +80,6 @@ header{
     opacity: 0.5;
     padding-bottom: 8px;
     border-bottom: 3px solid transparent;
-    transition: all 0.3s ease;
     cursor: pointer;
     transform: translateY(0);
     transition: opacity 0.3s ease, border 0.3s ease, transform 0.25s ease;
@@ -94,17 +94,18 @@ header{
 .ps5-accessory:hover {
     opacity: 1;
     border-bottom: 3px solid #0d6efd;
-     transform: translateY(-8px);
+    transform: translateY(-8px);
 }
+
 /* IT TAKES TWO LOGO*/
-.it-logo{
+.it-logo {
     width: 250px;
     margin-left: 20px;
 }
 
 /* NUOVE USCITE */
 .new-releases {
-    background-color: #1f1f1f; 
+    background-color: #1f1f1f;
 }
 
 /* CARD */
@@ -144,6 +145,7 @@ header{
 .new-releases .game-card:hover .game-title {
     opacity: 0.85;
 }
+
 /* ESPLORA PS4 */
 .explore-card {
     overflow: hidden;
@@ -162,11 +164,12 @@ header{
 /*PS PLUS*/
 
 
-.ps-plus img{
+.ps-plus img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* SCONTI PS STORE*/
 .store-card {
     border: 2px solid transparent;
@@ -194,9 +197,10 @@ header{
 }
 
 /*PS Now*/
-.ps-now{
+.ps-now {
     background-color: #161c3b;
 }
+
 /* SOCIAL */
 .social-icon {
     border-radius: 12px;
@@ -217,15 +221,18 @@ header{
 .social-icon:hover img {
     transform: scale(1.05);
 }
+
 /* FOOTER */
-.footer-logo{
+.footer-logo {
     width: 150px;
     filter: brightness(0) invert(1);
 }
+
 .footer-globe {
-    width:18px;
+    width: 18px;
 }
-.footer-sie-logo{
+
+.footer-sie-logo {
     max-width: 120px;
 }
 
@@ -247,10 +254,12 @@ header{
     .hero-logo {
         width: 250px;
     }
-    .hero-content.it-takes-two{
+
+    .hero-content.it-takes-two {
         width: 100%;
+    }
 }
-}
+
 @media (min-width: 992px) {
     .hero-img {
         height: 650px;
@@ -272,14 +281,12 @@ header{
     .hero-text {
         font-size: 0.95rem;
     }
-    .hero-content.it-takes-two{
+
+    .hero-content.it-takes-two {
         width: 50%;
     }
 
-    @media (min-width: 992px) {
     .footer-links .row {
         justify-content: flex-end;
     }
-}
-
 }

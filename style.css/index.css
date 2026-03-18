@@ -65,11 +65,13 @@ header{
     border-radius: 12px;
     overflow: hidden;
     border: 2px solid transparent;
-    transition: border 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.2s ease;
 }
 
 .games-preview .game-card:hover {
     border: 2px solid #0070d1;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /*PS5 E ACCESSORI*/
@@ -79,18 +81,65 @@ header{
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, border 0.3s ease, transform 0.25s ease;
 }
 
 .ps5-accessory.active {
     opacity: 1;
     border-bottom: 3px solid #0d6efd;
-    
+    transform: translateY(-8px);
 }
 
 .ps5-accessory:hover {
     opacity: 1;
     border-bottom: 3px solid #0d6efd;
+     transform: translateY(-8px);
 }
+
+/* NUOVE USCITE */
+.new-releases {
+    background-color: #1f1f1f; 
+}
+
+/* CARD */
+.new-releases .game-card {
+    cursor: pointer;
+    transform: translateY(0);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* IMMAGINE */
+.new-releases .game-card img {
+    border-radius: 12px;
+    transition: transform 0.25s ease;
+}
+
+/* TITOLO */
+.new-releases .game-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #ffffff;
+    transition: opacity 0.25s ease;
+}
+
+/* HOVER */
+.new-releases .game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border: 2px solid #0070d1;
+}
+
+.new-releases .game-card:hover img {
+    transform: scale(1.04);
+}
+
+.new-releases .game-card:hover .game-title {
+    opacity: 0.85;
+}
+
 /* IT TAKES TWO LOGO*/
 .it-logo{
     width: 250px;

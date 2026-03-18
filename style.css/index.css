@@ -96,6 +96,11 @@ header{
     border-bottom: 3px solid #0d6efd;
      transform: translateY(-8px);
 }
+/* IT TAKES TWO LOGO*/
+.it-logo{
+    width: 250px;
+    margin-left: 20px;
+}
 
 /* NUOVE USCITE */
 .new-releases {
@@ -139,12 +144,21 @@ header{
 .new-releases .game-card:hover .game-title {
     opacity: 0.85;
 }
-
-/* IT TAKES TWO LOGO*/
-.it-logo{
-    width: 250px;
-    margin-left: 20px;
+/* ESPLORA PS4 */
+.explore-card {
+    overflow: hidden;
 }
+
+.explore-card img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.explore-card:hover img {
+    transform: scale(1.10);
+}
+
+
 /*PS PLUS*/
 
 
@@ -154,10 +168,54 @@ header{
     object-fit: cover;
 }
 /* SCONTI PS STORE*/
+.store-card {
+    border: 2px solid transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.store-card img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+    transform: translateY(-6px);
+    border-color: #0070d1;
+    box-shadow: 0 0 15px rgba(0, 112, 209, 0.35);
+}
+
+.store-card:hover img {
+    transform: scale(1.03);
+}
 
 /*PS Now*/
 .ps-now{
     background-color: #161c3b;
+}
+/* SOCIAL */
+.social-icon {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon:hover img {
+    transform: scale(1.05);
 }
 /* FOOTER */
 .footer-logo{
